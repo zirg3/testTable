@@ -67,7 +67,8 @@ a {
   border-collapse: collapse;
   min-width: 1000px;
   overflow-x: auto;
-
+  width: 100%;
+  
   td {
     padding: 20px 22px;
     font-size: 13px;
@@ -106,7 +107,12 @@ a {
   color: #ffffff;
   text-align: left;
 
+  th:nth-of-type(1) {
+    width: 10%;
+  }
+
   th:nth-of-type(2) {
+    width: 50%;
     padding-left: 10%;
 
     &::before {
@@ -115,6 +121,7 @@ a {
   }
   th:nth-of-type(3) {
     padding-left: 8%;
+    width: 40%;
 
     &::before {
       left: 40%;
